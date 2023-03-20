@@ -14,7 +14,8 @@ The application was written entirely in python and included several libraries (s
 > To start the app with python
 
 1. Clone the repository (Or download the files).
-2. In the terminnal, run `python <path to app.py>.
+2. In the terminnal, run `python <path to app.py>`.
+3. To run the tests, run `pytest src/tests/` (after pytest has been installed).
 
 ## 👨‍💻 Technical Features
 * Automatic swagger documentation. (exposed on the root / endpoint)
