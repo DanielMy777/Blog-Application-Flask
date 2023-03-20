@@ -9,7 +9,7 @@ The application was written entirely in python and included several libraries (s
 
 1. Clone the repository (Or download the files).
 2. In the terminnal, reach the root directory of this project. 
-3. run `docker-compose up`
+3. run `docker-compose up`..
 
 > To start the app with python
 
@@ -21,13 +21,25 @@ The application was written entirely in python and included several libraries (s
 * Automatic swagger documentation. (exposed on the root / endpoint)
 * Caching.
 * Authentication & Security
-* Containerization
+* Containerization (Currently pulling the image from docker hub but you can use the dockerfile as well)
 * Tests
 
-## ⚙️ Behavioural Features
+## 😁 Behavioural Features
 * Creating a new user and logging in as an existing user.
 * Creating, getting, deleting and editing blog posts.
 * Commenting and liking blog posts.
+
+## ⚙️ Configurations To Docker-Compose
+* In case port 5000 is already in use on your machine: 
+    1. Change the app ports to `<new_port>:5000`.
+* In case port 5432 is already in use on your machine:
+    1. Change the postgres ports to `<new_port>:5432`.
+    2. Change env var `POSTGRES_SERVICE` to `postgres:<new_port>`.
+    3. Change env var `PGPORT` to `<new_port>`.
+* In case port 6379 is already in use on your machine:
+    1. Change the redis ports to `<new_port>:6379`.
+    2. Change env var `CACHE_REDIS_PORT` to `<new_port>`.
+    3. Change env var `CACHE_REDIS_URL` to `redis://redis:<new_port>/0`.
 
 ## 📖 Manual!
 * To register, you must enter a username & password (non empty). You cannot use a username thats already taken.
