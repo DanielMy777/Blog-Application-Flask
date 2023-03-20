@@ -9,7 +9,7 @@ The application was written entirely in python and included several libraries (s
 
 1. Clone the repository (Or download the files).
 2. In the terminnal, reach the root directory of this project. 
-3. run `docker-compose up`..
+3. run `docker-compose up`.
 
 > To start the app with python
 
